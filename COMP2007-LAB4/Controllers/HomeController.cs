@@ -8,11 +8,13 @@ namespace COMP2007_LAB4.Controllers
 {
     public class HomeController : Controller
     {
+        //GET: /Home/Index or /
         public ActionResult Index()
         {
             return View();
         }
 
+        //GET: /Home/About or /
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -20,6 +22,7 @@ namespace COMP2007_LAB4.Controllers
             return View();
         }
 
+        //GET: /Home/Contactr or /
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
